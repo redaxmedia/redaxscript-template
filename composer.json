@@ -1,0 +1,16 @@
+{
+	"name": "redaxmedia/redaxscript-template",
+	"description": "Template for Redaxscript's website",
+	"version": "3.0.0",
+	"homepage": "http://redaxscript.com",
+	"license": "GPL-3.0",
+	"require":
+	{
+		"php": ">5.4"
+	},
+	"require-dev":
+	{
+		"redaxmedia/redaxscript": "dev-master",
+		"redaxmedia/tocgen": "4.1.1"
+	}
+}

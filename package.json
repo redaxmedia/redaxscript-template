@@ -1,0 +1,40 @@
+{
+	"name": "redaxscript-template",
+	"description": "Template for Redaxscript's website",
+	"version": "3.0.0",
+	"homepage": "http://redaxscript.com",
+	"license": "GPL-3.0",
+	"author":
+	{
+		"name": "Henry Ruhs",
+		"url": "http://redaxmedia.com"
+	},
+	"devDependencies":
+	{
+		"autoprefixer": "6.7.0",
+		"cssnano": "3.10.0",
+		"colorguard": "1.2.0",
+		"grunt": "1.0.1",
+		"grunt-contrib-rename": "0.0.3",
+		"grunt-contrib-watch": "1.0.0",
+		"grunt-htmlhint": "0.9.13",
+		"grunt-jsonlint": "1.1.0",
+		"grunt-postcss": "0.8.0",
+		"grunt-shell": "2.1.0",
+		"grunt-svgmin": "4.0.0",
+		"grunt-webfont": "1.5.0",
+		"load-grunt-tasks": "3.5.2",
+		"postcss-color-function": "2.0.1",
+		"postcss-color-gray": "3.0.1",
+		"postcss-custom-media": "5.0.1",
+		"postcss-custom-properties": "5.0.1",
+		"postcss-custom-selectors": "3.0.0",
+		"postcss-extend": "1.0.5",
+		"postcss-import": "9.1.0",
+		"postcss-nesting": "2.3.1",
+		"postcss-reporter": "3.0.0",
+		"redaxscript-flaticon": "3.0.4",
+		"stylefmt": "5.1.1",
+		"stylelint": "7.7.1"
+	}
+}

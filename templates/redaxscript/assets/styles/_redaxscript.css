@@ -1,0 +1,23 @@
+/**
+ * @tableofcontents
+ *
+ * 1. redaxscript
+ *
+ * @since 3.0.0
+ *
+ * @package Redaxmedia
+ * @author Henry Ruhs
+ */
+
+/* @section 1. redaxscript */
+
+@import '../../../../vendor/redaxmedia/redaxscript/assets/styles/_query.css';
+@import '../../../../vendor/redaxmedia/redaxscript/templates/default/assets/styles/_variable.css';
+@import '../../../../vendor/redaxmedia/redaxscript/templates/default/assets/styles/_button.css';
+@import '_variable.css';
+@import '_flaticon.css';
+@import 'animation.css';
+@import 'documentation.css';
+@import 'feature.css';
+@import 'homepage.css';
+@import 'layout.css';

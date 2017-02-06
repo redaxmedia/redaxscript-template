@@ -1,0 +1,158 @@
+/**
+* @tableofcontents
+*
+* 1. flaticon
+*
+* @since 3.0.0
+*
+* @package Redaxscript
+* @author Henry Ruhs
+*/
+
+/* @section 1. flaticon */
+
+@font-face
+{
+	font-family: var(--rs-font-flaticon);
+	src: url('../../../../templates/redaxscript/dist/fonts/flaticon.woff2') format('woff2'), url('../../../../templates/redaxscript/dist/fonts/flaticon.woff') format('woff');
+}
+
+%rs-font-flaticon-agenda
+{
+	content: '\f101';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-cube
+{
+	content: '\f102';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-alarm
+{
+	content: '\f103';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-database-1
+{
+	content: '\f104';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-magic-wand
+{
+	content: '\f105';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-paper-plane-1
+{
+	content: '\f106';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-settings-6
+{
+	content: '\f107';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-stopwatch-1
+{
+	content: '\f108';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-rocket-ship
+{
+	content: '\f109';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-devices
+{
+	content: '\f10a';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-command-line
+{
+	content: '\f10b';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-editing-code
+{
+	content: '\f10c';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-atoms
+{
+	content: '\f10d';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-flask
+{
+	content: '\f10e';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-antivirus
+{
+	content: '\f10f';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-key
+{
+	content: '\f110';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-analytics-2
+{
+	content: '\f111';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-layers
+{
+	content: '\f112';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-paint-palette-1
+{
+	content: '\f113';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-cruise
+{
+	content: '\f114';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}

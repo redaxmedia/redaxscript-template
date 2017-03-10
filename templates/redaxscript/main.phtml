@@ -21,7 +21,7 @@
 
 		<!-- else content and sidebar -->
 
-		<?php elseif (Tag::getRegistry('firstParameter') === 'documentation'): ?>
+		<?php elseif (Tag::getRegistry('firstParameter') === 'api' || Tag::getRegistry('firstParameter') === 'documentation'): ?>
 			<div class="rs-wrapper rs-wrapper-page rs-has-sidebar rs-fn-clearfix">
 				<?php echo Tag::partial(
 				[

@@ -2,8 +2,24 @@
 namespace Redaxscript\Template;
 
 $navigationArray = [];
-$categories = Tag::categoryRaw()->where('author', 'documentation-sync')->orderByAsc('rank')->findMany();
-$articles = Tag::articleRaw()->where('author', 'documentation-sync')->orderByAsc('rank')->findMany();
+$optionArray =
+[
+	'api' =>
+	[
+		'author' => 'api-sync',
+		'order' => 'title'
+	],
+	'documentation' =>
+	[
+		'author' => 'documentation-sync',
+		'order' => 'rank'
+	],
+];
+$firstParameter = Tag::getRegistry('firstParameter');
+$author = $optionArray[$firstParameter]['author'];
+$order = $optionArray[$firstParameter]['order'];
+$categories = Tag::categoryRaw()->where('author', $author)->orderByAsc($order)->findMany();
+$articles = Tag::articleRaw()->where('author', $author)->orderByAsc($order)->findMany();
 
 /* process categories */
 

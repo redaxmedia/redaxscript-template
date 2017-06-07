@@ -1,4 +1,4 @@
-Redaxscript template
+Redaxscript Template
 ====================
 
 > Template for Redaxscript's website.

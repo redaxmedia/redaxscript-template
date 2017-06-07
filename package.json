@@ -24,6 +24,7 @@
 		"grunt-svgmin": "4.0.0",
 		"grunt-webfont": "1.5.0",
 		"load-grunt-tasks": "3.5.2",
+		"postcss": "6.0.1",
 		"postcss-color-function": "4.0.0",
 		"postcss-color-gray": "4.0.0",
 		"postcss-custom-media": "6.0.0",

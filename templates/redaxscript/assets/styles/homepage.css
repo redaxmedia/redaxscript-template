@@ -174,12 +174,3 @@
 		vertical-align: top;
 	}
 }
-
-@media (--media-medium-min)
-{
-	.rs-wrapper-badge-shield a
-	{
-		margin-left: 0.5em;
-		margin-right: 0.5em;
-	}
-}

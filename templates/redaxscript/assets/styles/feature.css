@@ -40,8 +40,7 @@
 .rs-box-feature
 {
 	background: gray(255);
-	border-radius: 0.125em 0.125em 0 0;
-	border-top: 0.25em solid var(--rs-color-primary);
+	border-radius: 0.125em;
 	font-size: 1.25em;
 	margin-bottom: 4em;
 	margin-left: auto;

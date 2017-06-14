@@ -16,5 +16,6 @@
 	display: inline-block;
 	font-size: 0.75em;
 	font-weight: bold;
+	margin-top: 3em;
 	text-transform: uppercase;
 }

@@ -29,6 +29,19 @@ module.exports = function (grunt)
 				]
 			}
 		},
+		ncsslint:
+		{
+			templateRedaxscript:
+			{
+				options:
+				{
+					path: 'templates/redaxscript/*.phtml',
+					namespace: 'rs',
+					loglevel: 'info',
+					haltonerror: true
+				}
+			}
+		},
 		htmlhint:
 		{
 			templates:
@@ -250,6 +263,7 @@ module.exports = function (grunt)
 		'jsonlint',
 		'stylelint',
 		'colorguard',
+		'ncsslint',
 		'htmlhint',
 		'toclint'
 	]);

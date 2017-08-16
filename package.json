@@ -23,7 +23,7 @@
 		"grunt-postcss": "0.8.0",
 		"grunt-shell": "2.1.0",
 		"grunt-svgmin": "4.0.0",
-		"grunt-webfont": "1.6.0",
+		"grunt-webfont": "1.5.0",
 		"load-grunt-tasks": "3.5.2",
 		"postcss": "6.0.9",
 		"postcss-color-function": "4.0.0",

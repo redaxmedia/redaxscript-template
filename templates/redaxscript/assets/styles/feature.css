@@ -89,6 +89,7 @@
 
 	& img
 	{
+		border-radius: 50%;
 		display: block;
 		margin: 0.75em auto;
 		opacity: 0.8;

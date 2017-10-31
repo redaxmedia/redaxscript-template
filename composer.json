@@ -1,5 +1,5 @@
 {
-	"name": "redaxmedia/redaxscript-template",
+	"name": "redaxscript/redaxscript-template",
 	"description": "Template for Redaxscript's website",
 	"version": "3.2.3",
 	"homepage": "https://redaxscript.com",
@@ -10,6 +10,6 @@
 	},
 	"require-dev":
 	{
-		"redaxmedia/redaxscript": "dev-master"
+		"redaxscript/redaxscript": "dev-master"
 	}
 }

@@ -1,17 +1,14 @@
-module.exports = function ()
+module.exports = () =>
 {
 	'use strict';
 
-	var config =
+	const config =
 	{
 		templates:
 		{
 			options:
 			{
-				path: 'templates/*/*.phtml',
-				namespace: 'rs',
-				loglevel: 'info',
-				haltonerror: true
+				path: 'templates/*/*.phtml'
 			}
 		}
 	};

@@ -16,7 +16,8 @@ module.exports = () =>
 		{
 			src:
 			[
-				'templates/*/assets/styles/*.css'
+				'templates/*/assets/styles/*.css',
+				'!templates/*/assets/styles/_template.css'
 			],
 			options:
 			{
@@ -34,7 +35,8 @@ module.exports = () =>
 		{
 			src:
 			[
-				'templates/*/assets/styles/*.css'
+				'templates/*/assets/styles/*.css',
+				'!templates/*/assets/styles/_template.css'
 			],
 			options:
 			{

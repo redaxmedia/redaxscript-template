@@ -34,7 +34,7 @@ module.exports = () =>
 			{
 				font: 'flaticon',
 				destCss: 'templates/redaxscript/assets/styles',
-				template: 'templates/redaxscript/assets/styles/_flaticon.tpl'
+				template: 'templates/redaxscript/assets/styles/_template.css'
 			}
 		},
 		options:

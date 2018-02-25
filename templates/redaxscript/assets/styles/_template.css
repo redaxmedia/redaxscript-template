@@ -16,7 +16,7 @@
 	font-family: var(--rs-font-flaticon);
 	src: url('../../../../templates/redaxscript/dist/fonts/flaticon.woff2') format('woff2'), url('../../../../templates/redaxscript/dist/fonts/flaticon.woff') format('woff');
 }
-<% for (var i in glyphs)
+<% for (let i in glyphs)
 {
 %>
 %rs-font-flaticon-<%=glyphs[i] %>

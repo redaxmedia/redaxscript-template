@@ -2,14 +2,9 @@
  * @tableofcontents
  *
  * 1. redaxscript
- *
- * @since 3.0.0
- *
- * @package Redaxmedia
- * @author Henry Ruhs
  */
 
-/* @section 1. redaxscript */
+/** @section 1. redaxscript */
 
 @import '../../../../vendor/redaxscript/redaxscript/assets/styles/_query.css';
 @import '../../../../vendor/redaxscript/redaxscript/templates/default/assets/styles/_variable.css';

@@ -12,6 +12,7 @@ module.exports = function (grunt)
 		ncsslint: require('./tasks/ncsslint')(grunt),
 		htmlhint: require('./tasks/htmlhint')(grunt),
 		postcss: require('./tasks/postcss')(grunt),
+		tocgen: require('./tasks/tocgen')(grunt),
 		webfont: require('./tasks/webfont')(grunt),
 		rename: require('./tasks/rename')(grunt),
 		svgmin: require('./tasks/svgmin')(grunt)
@@ -42,6 +43,11 @@ module.exports = function (grunt)
 	grunt.registerTask('colorguard',
 	[
 		'postcss:colorguard'
+	]);
+	grunt.registerTask('optimize',
+	[
+		'tocgen',
+		'svgmin'
 	]);
 	grunt.registerTask('build',
 	[

@@ -1,5 +1,5 @@
 <?php
-namespace Redaxscript\Template;
+namespace Redaxscript;
 
 $navigationArray = [];
 $optionArray =
@@ -15,11 +15,11 @@ $optionArray =
 		'order' => 'rank'
 	],
 ];
-$firstParameter = Tag::getRegistry('firstParameter');
+$firstParameter = Template\Tag::getRegistry('firstParameter');
 $author = $optionArray[$firstParameter]['author'];
 $order = $optionArray[$firstParameter]['order'];
-$categories = Tag::categoryRaw()->where('author', $author)->orderByAsc($order)->findMany();
-$articles = Tag::articleRaw()->where('author', $author)->orderByAsc($order)->findMany();
+$categories = Db::forTablePrefix('categories')->where('author', $author)->orderByAsc($order)->findMany();
+$articles = Db::forTablePrefix('articles')->where('author', $author)->orderByAsc($order)->findMany();
 
 /* process categories */
 

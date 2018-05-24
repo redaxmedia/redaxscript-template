@@ -4,7 +4,7 @@
 
 <?php if (!Tag::getRegistry('fullRoute')): ?>
 	<main class="rs-fn-clearfix">
-		<?php echo Tag::partial('templates/redaxscript/homepage.phtml'); ?>
+		<?php echo Tag::partial('redaxscript/homepage.phtml'); ?>
 	</main>
 
 <!-- else default -->
@@ -16,7 +16,7 @@
 
 		<?php if (Tag::getRegistry('contentError')): ?>
 			<div class="rs-wrapper rs-wrapper-page rs-fn-clearfix">
-				<?php echo Tag::partial('templates/default/error.phtml'); ?>
+				<?php echo Tag::partial('default/error.phtml'); ?>
 			</div>
 
 		<!-- else content and sidebar -->
@@ -25,8 +25,8 @@
 			<div class="rs-wrapper rs-wrapper-page rs-has-sidebar rs-fn-clearfix">
 				<?php echo Tag::partial(
 				[
-					'templates/default/content.phtml',
-					'templates/redaxscript/sidebar.phtml'
+					'default/content.phtml',
+					'redaxscript/sidebar.phtml'
 				]); ?>
 			</div>
 
@@ -34,7 +34,7 @@
 
 		<?php else: ?>
 			<div class="rs-wrapper rs-wrapper-page rs-fn-clearfix">
-				<?php echo Tag::partial('templates/default/content.phtml'); ?>
+				<?php echo Tag::partial('default/content.phtml'); ?>
 			</div>
 		<?php endif; ?>
 	</main>

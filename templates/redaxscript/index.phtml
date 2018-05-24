@@ -8,8 +8,8 @@
 	<head>
 		<?php echo Tag::partial(
 		[
-			'templates/admin/head.phtml',
-			'templates/redaxscript/head.phtml'
+			'admin/head.phtml',
+			'redaxscript/head.phtml'
 		]); ?>
 	</head>
 
@@ -22,16 +22,16 @@
 	<?php endif; ?>
 		<?php $body = Tag::partial(
 		[
-			Tag::getRegistry('fullRoute') ? 'templates/redaxscript/header.phtml' : null,
-			'templates/redaxscript/main.phtml',
-			Tag::getRegistry('fullRoute') ? 'templates/default/footer.phtml' : null,
-			'templates/admin/script.phtml',
-			'templates/default/script.phtml'
+			Tag::getRegistry('fullRoute') ? 'redaxscript/header.phtml' : null,
+			'redaxscript/main.phtml',
+			Tag::getRegistry('fullRoute') ? 'default/footer.phtml' : null,
+			'admin/script.phtml',
+			'default/script.phtml'
 		]); ?>
 		<?php echo Tag::partial(
 		[
-			'templates/admin/panel.phtml',
-			'templates/default/menu-status.phtml'
+			'admin/panel.phtml',
+			'default/menu-status.phtml'
 		]); ?>
 		<div class="rs-has-menu">
 			<?php echo $body; ?>

@@ -15,7 +15,7 @@ $optionArray =
 		'order' => 'rank'
 	],
 ];
-$firstParameter = Template\Tag::getRegistry('firstParameter');
+$firstParameter = Template\Helper::getRegistry('firstParameter');
 $author = $optionArray[$firstParameter]['author'];
 $order = $optionArray[$firstParameter]['order'];
 $categories = Db::forTablePrefix('categories')->where('author', $author)->orderByAsc($order)->findMany();

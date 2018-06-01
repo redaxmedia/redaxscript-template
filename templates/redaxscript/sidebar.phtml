@@ -5,7 +5,7 @@
 
 	<!-- navigation -->
 
-	<?php if(Tag::getRegistry('firstParameter') === 'api' || Tag::getRegistry('firstParameter') === 'documentation'): ?>
+	<?php if(Helper::getRegistry('firstParameter') === 'api' || Helper::getRegistry('firstParameter') === 'documentation'): ?>
 		<?php include('redaxscript/helper/navigation.php'); ?>
 		<?php include('redaxscript/navigation.phtml'); ?>
 	<?php endif; ?>

@@ -2,7 +2,7 @@
 
 <!-- homepage -->
 
-<?php if (!Tag::getRegistry('fullRoute')): ?>
+<?php if (!Helper::getRegistry('fullRoute')): ?>
 	<main class="rs-fn-clearfix">
 		<?php echo Tag::partial('redaxscript/homepage.phtml'); ?>
 	</main>
@@ -14,14 +14,14 @@
 
 		<!-- error -->
 
-		<?php if (Tag::getRegistry('contentError')): ?>
+		<?php if (Helper::getRegistry('contentError')): ?>
 			<div class="rs-wrapper rs-wrapper-page rs-fn-clearfix">
 				<?php echo Tag::partial('default/error.phtml'); ?>
 			</div>
 
 		<!-- else content and sidebar -->
 
-		<?php elseif (Tag::getRegistry('firstParameter') === 'api' || Tag::getRegistry('firstParameter') === 'documentation'): ?>
+		<?php elseif (Helper::getRegistry('firstParameter') === 'api' || Helper::getRegistry('firstParameter') === 'documentation'): ?>
 			<div class="rs-wrapper rs-wrapper-page rs-has-sidebar rs-fn-clearfix">
 				<?php echo Tag::partial(
 				[

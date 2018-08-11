@@ -1,14 +1,5 @@
-/**
- * @tableofcontents
- *
- * 1. redaxscript
- */
-
-/** @section 1. redaxscript */
-
-@import '../../../../vendor/redaxscript/redaxscript/assets/styles/_query.css';
-@import '../../../../vendor/redaxscript/redaxscript/templates/default/assets/styles/_variable.css';
-@import '../../../../vendor/redaxscript/redaxscript/templates/default/assets/styles/_button.css';
+@import '../../../../node_modules/harmonize.css/harmonize.css';
+@import '../../../../vendor/redaxscript/redaxscript/templates/default/assets/styles/_default.css';
 @import '_variable.css';
 @import '_flaticon.css';
 @import 'documentation.css';

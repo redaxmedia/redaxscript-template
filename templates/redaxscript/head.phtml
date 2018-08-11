@@ -6,18 +6,18 @@
 
 <!-- title -->
 
-<?php echo Tag::title(Tag::getRegistry('fullRoute') ? Helper::getTitle() : Tag::getSetting('title')); ?>
+<?php echo Tag::title(Helper::getRegistry('fullRoute') ? Helper::getTitle() : Helper::getSetting('title')); ?>
 
 <!-- meta -->
 
 <?php echo Tag::meta()
 	->init()
-	->append('charset', Tag::getSetting('charset'))
-	->append(['name' => 'author', 'content' => Tag::getSetting('author')])
-	->append(['name' => 'generator', 'content' => Tag::getLanguage('name', '_package') . ' ' . Tag::getLanguage('version', '_package')])
-	->append(['name' => 'description', 'content' => Tag::getRegistry('fullRoute') ? Helper::getDescription() : Tag::getSetting('description')])
-	->append(['name' => 'keywords', 'content' => Tag::getRegistry('fullRoute') ? Helper::getKeywords() : Tag::getSetting('keywords')])
-	->append(['name' => 'robots', 'content' => Tag::getRegistry('fullRoute') ? Helper::getRobots() : 'all'])
+	->append('charset', Helper::getSetting('charset'))
+	->append(['name' => 'author', 'content' => Helper::getSetting('author')])
+	->append(['name' => 'generator', 'content' => Helper::getLanguage('name', '_package') . ' ' . Helper::getLanguage('version', '_package')])
+	->append(['name' => 'description', 'content' => Helper::getRegistry('fullRoute') ? Helper::getDescription() : Helper::getSetting('description')])
+	->append(['name' => 'keywords', 'content' => Helper::getRegistry('fullRoute') ? Helper::getKeywords() : Helper::getSetting('keywords')])
+	->append(['name' => 'robots', 'content' => Helper::getRegistry('fullRoute') ? Helper::getRobots() : 'all'])
 	->append(['name' => 'viewport', 'content' => 'width=device-width'])
 	->append(['name' => 'theme-color', 'content' => '#323e4c'])
 	->append(['name' => 'msapplication-navbutton-color', 'content' => '#323e4c'])
@@ -29,13 +29,11 @@
 
 <?php echo Tag::link()
 	->init()
-	->append(['href' => Tag::getRegistry('fullRoute') ? Helper::getCanonical() : Tag::getRegistry('root'), 'rel' => 'canonical'])
+	->append(['href' => Helper::getRegistry('fullRoute') ? Helper::getCanonical() : Helper::getRegistry('root'), 'rel' => 'canonical'])
 	->append(['href' => 'templates/default/assets/images/favicon.ico', 'rel' => 'shortcut icon'])
 	->append(['href' => 'templates/default/assets/images/favicon.png', 'rel' => 'apple-touch-icon'])
 	->appendFile('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=' . Helper::getSubset())
 	->appendFile('https://fonts.googleapis.com/css?family=Pacifico&amp;text=What+are+you?;subset=' . Helper::getSubset())
-	->appendFile('dist/styles/base.min.css')
-	->appendFile('templates/default/dist/styles/default.min.css')
 	->appendFile('templates/redaxscript/dist/styles/redaxscript.min.css')
 	->rewrite(
 	[
@@ -50,8 +48,6 @@
 
 <?php echo Tag::script()
 	->init('head')
-	->prependFile('templates/default/assets/scripts/init.js')
 	->prependFile('assets/scripts/init.js')
-	->prependFile('assets/scripts/support.js')
 	->transportVar('rs', Helper::getTransport())
 	->concat(); ?>

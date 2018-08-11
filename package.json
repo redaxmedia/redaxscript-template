@@ -35,6 +35,7 @@
 		"postcss-import": "11.1.0",
 		"postcss-nesting": "6.0.0",
 		"postcss-reporter": "5.0.0",
+		"postcss-rtl": "1.3.2",
 		"redaxscript-flaticon": "https://github.com/redaxscript/redaxscript-flaticon.git",
 		"stylefmt": "6.0.0",
 		"stylelint": "9.3.0",

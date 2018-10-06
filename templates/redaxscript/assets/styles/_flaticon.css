@@ -9,17 +9,17 @@
 @font-face
 {
 	font-family: var(--rs-font-flaticon);
-	src: url('../../../../templates/redaxscript/dist/fonts/flaticon.woff2') format('woff2'), url('../../../../templates/redaxscript/dist/fonts/flaticon.woff') format('woff');
+	src: url('../../../../templates/redaxscript/dist/fonts/flaticon.woff2') format('woff2');
 }
 
-%rs-font-flaticon-agenda
+%rs-font-flaticon-cube
 {
 	content: '\f101';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-cube
+%rs-font-flaticon-agenda
 {
 	content: '\f102';
 	font-family: var(--rs-font-flaticon);
@@ -68,14 +68,14 @@
 	font-weight: normal;
 }
 
-%rs-font-flaticon-rocket-ship
+%rs-font-flaticon-devices
 {
 	content: '\f109';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-devices
+%rs-font-flaticon-rocket-ship
 {
 	content: '\f10a';
 	font-family: var(--rs-font-flaticon);

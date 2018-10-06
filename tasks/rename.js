@@ -8,7 +8,7 @@ module.exports = () =>
 		{
 			src:
 			[
-				'templates/redaxscript/assets/styles/flaticon.tpl'
+				'templates/redaxscript/assets/styles/flaticon.css'
 			],
 			dest: 'templates/redaxscript/assets/styles/_flaticon.css'
 		}

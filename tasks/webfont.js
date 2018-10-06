@@ -32,13 +32,13 @@ module.exports = () =>
 			dest: 'templates/redaxscript/dist/fonts',
 			options:
 			{
-				font: 'flaticon',
 				destCss: 'templates/redaxscript/assets/styles',
 				template: 'templates/redaxscript/assets/styles/_template.css'
 			}
 		},
 		options:
 		{
+			font: 'flaticon',
 			types:
 			[
 				'woff2'

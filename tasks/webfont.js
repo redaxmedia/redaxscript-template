@@ -8,16 +8,16 @@ module.exports = () =>
 		{
 			src:
 			[
-				'node_modules/redaxscript-flaticon/flaticon/essential/agenda.svg',
 				'node_modules/redaxscript-flaticon/flaticon/design/cube.svg',
+				'node_modules/redaxscript-flaticon/flaticon/essential/agenda.svg',
 				'node_modules/redaxscript-flaticon/flaticon/essential/alarm.svg',
 				'node_modules/redaxscript-flaticon/flaticon/essential/database-1.svg',
 				'node_modules/redaxscript-flaticon/flaticon/essential/magic-wand.svg',
 				'node_modules/redaxscript-flaticon/flaticon/essential/paper-plane-1.svg',
 				'node_modules/redaxscript-flaticon/flaticon/essential/settings-6.svg',
 				'node_modules/redaxscript-flaticon/flaticon/essential/stopwatch-1.svg',
-				'node_modules/redaxscript-flaticon/flaticon/productivity-and-development/rocket-ship.svg',
 				'node_modules/redaxscript-flaticon/flaticon/online-marketing/devices.svg',
+				'node_modules/redaxscript-flaticon/flaticon/productivity-and-development/rocket-ship.svg',
 				'node_modules/redaxscript-flaticon/flaticon/programming-line/command-line.svg',
 				'node_modules/redaxscript-flaticon/flaticon/programming-line/editing-code.svg',
 				'node_modules/redaxscript-flaticon/flaticon/science/atoms.svg',
@@ -41,7 +41,6 @@ module.exports = () =>
 		{
 			types:
 			[
-				'woff',
 				'woff2'
 			],
 			autoHint: false,

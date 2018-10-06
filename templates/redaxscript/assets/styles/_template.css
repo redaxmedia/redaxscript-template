@@ -9,7 +9,7 @@
 @font-face
 {
 	font-family: var(--rs-font-flaticon);
-	src: url('../../../../templates/redaxscript/dist/fonts/flaticon.woff2') format('woff2'), url('../../../../templates/redaxscript/dist/fonts/flaticon.woff') format('woff');
+	src: url('../../../../templates/redaxscript/dist/fonts/flaticon.woff2') format('woff2');
 }
 <% glyphs.forEach((value, index) =>
 {

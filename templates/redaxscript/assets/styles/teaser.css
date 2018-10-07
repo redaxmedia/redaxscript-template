@@ -8,11 +8,11 @@
  *    1.4 badge
  */
 
-/** @section 1. homepage */
+/** @section 1. teaser */
 
 /** @section 1.1 box */
 
-.rs-box-homepage
+.rs-box-teaser
 {
 	background: var(--rs-color-tertiary);
 	box-sizing: border-box;
@@ -24,7 +24,7 @@
 
 @media (--media-medium-min)
 {
-	.rs-box-homepage
+	.rs-box-teaser
 	{
 		align-items: center;
 		display: flex;

@@ -3,26 +3,26 @@
 <!-- homepage -->
 
 <?php if (!Helper::getRegistry('fullRoute')): ?>
-	<main class="rs-fn-clearfix">
+	<main>
 		<?php echo Tag::partial('redaxscript/homepage.phtml'); ?>
 	</main>
 
 <!-- else default -->
 
 <?php else: ?>
-	<main id="main" class="rs-main rs-fn-clearfix">
+	<main id="main" class="rs-main">
 
 		<!-- error -->
 
-		<?php if (Helper::getRegistry('contentError')): ?>
-			<div class="rs-wrapper rs-wrapper-page rs-fn-clearfix">
+		<?php if (Helper::getResponseCode() === 404): ?>
+			<div class="rs-wrapper rs-wrapper-page">
 				<?php echo Tag::partial('default/error.phtml'); ?>
 			</div>
 
 		<!-- else content and sidebar -->
 
 		<?php elseif (Helper::getRegistry('firstParameter') === 'api' || Helper::getRegistry('firstParameter') === 'documentation'): ?>
-			<div class="rs-wrapper rs-wrapper-page rs-has-sidebar rs-fn-clearfix">
+			<div class="rs-wrapper rs-wrapper-page rs-has-sidebar">
 				<?php echo Tag::partial(
 				[
 					'default/content.phtml',
@@ -33,7 +33,7 @@
 		<!-- else content -->
 
 		<?php else: ?>
-			<div class="rs-wrapper rs-wrapper-page rs-fn-clearfix">
+			<div class="rs-wrapper rs-wrapper-page">
 				<?php echo Tag::partial('default/content.phtml'); ?>
 			</div>
 		<?php endif; ?>

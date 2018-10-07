@@ -1,19 +1,15 @@
 <?php namespace Redaxscript\Template; ?>
 
-<!-- homepage -->
+<!-- teaser -->
 
-<?php echo Tag::extraRaw()
-	->where('alias', 'homepage')
-	->findOne()
-	->text; ?>
+<?php include('redaxscript/helper/teaser.php'); ?>
+<?php echo $teaser; ?>
 
 <!-- feature -->
 
 <div class="rs-box-feature rs-wrapper-feature">
-	<?php echo Tag::articleRaw()
-		->where('alias', 'features')
-		->findOne()
-		->text; ?>
+	<?php include('redaxscript/helper/features.php'); ?>
+	<?php echo $features; ?>
 	<div class="rs-wrapper-button-feature">
 		<a href="features" class="rs-js-track-click rs-link-readmore" data-category="feature" data-action="readmore" data-label="3.0.0">Discover all features</a>
 	</div>

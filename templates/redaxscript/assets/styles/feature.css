@@ -43,7 +43,7 @@
 	padding: 5vh 0;
 }
 
-.rs-box-homepage + .rs-box-feature
+.rs-box-teaser + .rs-box-feature
 {
 	margin-top: -10vh;
 }

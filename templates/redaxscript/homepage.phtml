@@ -1,14 +1,14 @@
 <?php namespace Redaxscript\Template; ?>
 
-<!-- teaser -->
+<!-- homepage -->
 
-<?php echo include('redaxscript/helper/teaser.php'); ?>
+<?php echo include('redaxscript/helper/homepage.php'); ?>
 
 <!-- feature -->
 
 <div class="rs-box-feature rs-wrapper-feature">
 	<?php echo include('redaxscript/helper/features.php'); ?>
 	<div class="rs-wrapper-button-feature">
-		<a href="<?php echo Helper::getRegistry('parameterRoute'); ?>features" class="rs-js-track-click rs-link-readmore" data-category="feature" data-action="readmore" data-label="3.0.0">Discover all features</a>
+		<a href="<?php echo Helper::getRegistry('parameterRoute'); ?>features" class="rs-js-track-click rs-link-more" data-category="feature" data-action="more" data-label="4.0.0">Discover all features</a>
 	</div>
 </div>

@@ -8,11 +8,11 @@
  *    1.4 badge
  */
 
-/** @section 1. teaser */
+/** @section 1. homepage */
 
 /** @section 1.1 box */
 
-.rs-box-teaser
+.rs-box-homepage
 {
 	background: var(--rs-color-tertiary);
 	box-sizing: border-box;
@@ -24,7 +24,7 @@
 
 @media (--media-medium-min)
 {
-	.rs-box-teaser
+	.rs-box-homepage
 	{
 		align-items: center;
 		display: flex;
@@ -54,7 +54,7 @@
 
 .rs-link-branding:before
 {
-	background: var(--rs-url-branding) no-repeat center/ 55%, linear-gradient(to top, gray(230), gray(255));
+	background: var(--rs-url-branding) no-repeat center / 55%, linear-gradient(to top, gray(230), gray(255));
 	border-radius: 0.05em;
 	bottom: 0;
 	content: '';

@@ -43,7 +43,7 @@
 	padding: 5vh 0;
 }
 
-.rs-box-teaser + .rs-box-feature
+.rs-box-homepage + .rs-box-feature
 {
 	margin-top: -10vh;
 }
@@ -82,9 +82,10 @@
 	transition: color 0.1s;
 	width: 4em;
 
-	& img
+	&:after
 	{
 		border-radius: 50%;
+		content: '';
 		display: block;
 		margin: 0.75em auto;
 		opacity: 0.8;
@@ -95,11 +96,6 @@
 	&:hover
 	{
 		color: var(--rs-color-primary);
-
-		& img
-		{
-			opacity: 1;
-		}
 	}
 }
 
@@ -119,7 +115,7 @@
 {
 	color: var(--rs-color-tertiary);
 
-	& img
+	&:after
 	{
 		opacity: 1;
 		transform: scale(1.2);

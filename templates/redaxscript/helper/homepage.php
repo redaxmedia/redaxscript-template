@@ -2,6 +2,6 @@
 namespace Redaxscript;
 
 return Db::forTablePrefix('extras')
-	->where('alias', 'teaser')
+	->where('alias', 'homepage')
 	->findOne()
 	->text;

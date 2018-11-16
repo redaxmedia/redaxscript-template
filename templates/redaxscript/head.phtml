@@ -1,0 +1,53 @@
+<?php namespace Redaxscript\Template; ?>
+
+<!-- base -->
+
+<?php echo Tag::base(); ?>
+
+<!-- title -->
+
+<?php echo Tag::title(Helper::getTitle()); ?>
+
+<!-- meta -->
+
+<?php echo Tag::meta()
+	->init()
+	->append('charset', Helper::getSetting('charset'))
+	->append(['name' => 'author', 'content' => Helper::getSetting('author')])
+	->append(['name' => 'generator', 'content' => Helper::getLanguage('name', '_package') . ' ' . Helper::getLanguage('version', '_package')])
+	->append(['name' => 'description', 'content' => Helper::getDescription()])
+	->append(['name' => 'keywords', 'content' => Helper::getKeywords()])
+	->append(['name' => 'robots', 'content' => Helper::getRobots()])
+	->append(['name' => 'viewport', 'content' => 'width=device-width'])
+	->append(['name' => 'theme-color', 'content' => '#323e4c'])
+	->append(['name' => 'msapplication-navbutton-color', 'content' => '#323e4c'])
+	->append(['name' => 'apple-mobile-web-app-status-bar-stylecontent', 'content' => '#323e4c']); ?>
+
+<!-- link -->
+
+<?php echo Tag::link()
+	->init()
+	->append(['href' => Helper::getCanonical(), 'rel' => 'canonical'])
+	->append(['href' => 'templates/default/assets/images/favicon.ico', 'rel' => 'shortcut icon'])
+	->append(['href' => 'templates/default/assets/images/favicon.png', 'rel' => 'apple-touch-icon'])
+	->appendFile(
+	[
+		'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=' . Helper::getSubset(),
+		'templates/redaxscript/dist/styles/redaxscript.min.css'
+	])
+	->rewrite(
+	[
+		'../../../../templates' => '../../templates',
+		'../../../../modules' => '../../modules'
+	])
+	->concat(); ?>
+
+<?php echo Tag::link()->init('admin'); ?>
+
+<!-- head script -->
+
+<?php echo Tag::script()
+	->init('head')
+	->prependFile('assets/scripts/init.js')
+	->transportVar('rs', Helper::getTransport())
+	->concat(); ?>

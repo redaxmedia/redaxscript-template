@@ -17,6 +17,8 @@ module.exports = () =>
 				'node_modules/redaxscript-flaticon/flaticon/essential/settings-6.svg',
 				'node_modules/redaxscript-flaticon/flaticon/essential/stopwatch-1.svg',
 				'node_modules/redaxscript-flaticon/flaticon/online-marketing/devices.svg',
+				'node_modules/redaxscript-flaticon/flaticon/profiles-avatar/avatar-of-a-person-with-dark-short-hair.svg',
+				'node_modules/redaxscript-flaticon/flaticon/profiles-avatar/nerd-male-profile-avatar.svg',
 				'node_modules/redaxscript-flaticon/flaticon/productivity-and-development/rocket-ship.svg',
 				'node_modules/redaxscript-flaticon/flaticon/programming-line/command-line.svg',
 				'node_modules/redaxscript-flaticon/flaticon/programming-line/editing-code.svg',

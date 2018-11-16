@@ -45,7 +45,7 @@
 
 .rs-wrapper-label-feature
 {
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 	margin-top: 1em;
 	text-align: center;
 }
@@ -66,15 +66,12 @@
 
 	&:before
 	{
-		background: gray(0, 0.1);
 		border-radius: 50%;
-		content: '';
 		display: block;
-		height: 4em;
-		margin: 0.75em auto;
-		opacity: 0.8;
-		transition: transform 0.2s, opacity 0.2s;
-		width: 4em;
+		font-size: 4em;
+		height: 1em;
+		overflow: hidden;
+		transition: transform 0.2s;
 	}
 
 	&:hover
@@ -103,6 +100,18 @@
 		opacity: 1;
 		transform: scale(1.2);
 	}
+}
+
+/* icons */
+
+.rs-label-feature-designer:before
+{
+	@extend %rs-font-flaticon-avatar-of-a-person-with-dark-short-hair;
+}
+
+.rs-label-feature-developer:before
+{
+	@extend %rs-font-flaticon-nerd-male-profile-avatar;
 }
 
 /** @section 1.4 list */

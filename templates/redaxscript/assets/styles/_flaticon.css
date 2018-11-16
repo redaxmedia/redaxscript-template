@@ -75,79 +75,93 @@
 	font-weight: normal;
 }
 
-%rs-font-flaticon-rocket-ship
+%rs-font-flaticon-avatar-of-a-person-with-dark-short-hair
 {
 	content: '\f10a';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-command-line
+%rs-font-flaticon-nerd-male-profile-avatar
 {
 	content: '\f10b';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-editing-code
+%rs-font-flaticon-rocket-ship
 {
 	content: '\f10c';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-atoms
+%rs-font-flaticon-command-line
 {
 	content: '\f10d';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-flask
+%rs-font-flaticon-editing-code
 {
 	content: '\f10e';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-antivirus
+%rs-font-flaticon-atoms
 {
 	content: '\f10f';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-key
+%rs-font-flaticon-flask
 {
 	content: '\f110';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-analytics-2
+%rs-font-flaticon-antivirus
 {
 	content: '\f111';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-layers
+%rs-font-flaticon-key
 {
 	content: '\f112';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-paint-palette-1
+%rs-font-flaticon-analytics-2
 {
 	content: '\f113';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }
 
-%rs-font-flaticon-cruise
+%rs-font-flaticon-layers
 {
 	content: '\f114';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-paint-palette-1
+{
+	content: '\f115';
+	font-family: var(--rs-font-flaticon);
+	font-weight: normal;
+}
+
+%rs-font-flaticon-cruise
+{
+	content: '\f116';
 	font-family: var(--rs-font-flaticon);
 	font-weight: normal;
 }

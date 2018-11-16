@@ -54,15 +54,11 @@
 .rs-label-feature-designer
 {
 	border-radius: 0.125em;
-	color: gray(170);
-	cursor: pointer;
+	color: var(--rs-color-tertiary);
 	display: inline-block;
 	font-size: 1.25em;
-	margin: 0.25em;
-	padding: 0.5em;
+	margin: 0.5em;
 	text-transform: uppercase;
-	transition: color 0.1s;
-	width: 4em;
 
 	&:before
 	{
@@ -71,12 +67,6 @@
 		font-size: 4em;
 		height: 1em;
 		overflow: hidden;
-		transition: transform 0.2s;
-	}
-
-	&:hover
-	{
-		color: var(--rs-color-primary);
 	}
 }
 
@@ -86,19 +76,20 @@
 	.rs-label-feature-designer
 	{
 		font-size: 1.5em;
-		margin: 0 1em;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
 	}
 }
 
-.rs-fn-status-feature-developer:checked ~ .rs-has-feature .rs-label-feature-developer,
-.rs-fn-status-feature-designer:checked ~ .rs-has-feature .rs-label-feature-designer
+.rs-fn-status-feature-developer:not(:checked) ~ .rs-has-feature .rs-label-feature-developer,
+.rs-fn-status-feature-designer:not(:checked) ~ .rs-has-feature .rs-label-feature-designer
 {
-	color: var(--rs-color-tertiary);
+	color: gray(200);
+	cursor: pointer;
 
-	&:after
+	&:hover
 	{
-		opacity: 1;
-		transform: scale(1.2);
+		color: var(--rs-color-primary);
 	}
 }
 

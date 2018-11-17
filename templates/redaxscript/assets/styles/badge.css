@@ -34,7 +34,7 @@
 
 .rs-box-badge-beta
 {
-	background: var(--rs-gradient-beta);
+	background: var(--rs-color-beta);
 	box-shadow: 0 -0.125em 0 gray(0, 0.2) inset;
 	color: gray(255);
 	font-weight: bold;
@@ -47,7 +47,7 @@
 {
 	.rs-box-badge-beta
 	{
-		transform: rotate(45deg) translate(1.5em, -3em);
 		padding: 2em 3em 0.5em;
+		transform: rotate(45deg) translate(1.5em, -3em);
 	}
 }

@@ -308,8 +308,8 @@
 	overflow: hidden;
 }
 
-.rs-fn-status-designer:not(:checked) ~ .rs-has-feature .rs-is-developer,
-.rs-fn-status-designer:not(:checked) ~ .rs-has-feature .rs-is-designer
+.rs-fn-status-designer:checked ~ .rs-has-feature .rs-is-developer,
+.rs-fn-status-designer:checked ~ .rs-has-feature .rs-is-designer
 {
 	transform: translateX(-100%);
 }

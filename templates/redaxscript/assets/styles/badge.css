@@ -3,7 +3,7 @@
  *
  * 1. badge
  *    1.1 wrapper
- *    1.1 box
+ *    1.2 box
  */
 
 /** @section 1. badge */
@@ -29,7 +29,7 @@
 	}
 }
 
-/** @section 1.1 box */
+/** @section 1.2 box */
 
 .rs-box-badge-beta
 {

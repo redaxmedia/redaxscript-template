@@ -13,7 +13,7 @@
 {
 	/** @section 1.1 color */
 
-	--color-beta: #d34390;
+	--color-beta: #d30020;
 	--color-beta-dark: color(var(--color-beta) l(40%));
 
 	/** @section 1.2 gradient */

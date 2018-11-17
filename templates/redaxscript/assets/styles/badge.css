@@ -13,19 +13,20 @@
 .rs-wrapper-badge-beta
 {
 	font-size: 1.25em;
-	height: 5em;
-	overflow: hidden;
-	position: absolute;
-	right: 0;
-	top: 0;
-	z-index: 1;
+	text-align: center;
 }
 
 @media (--media-medium-min)
 {
 	.rs-wrapper-badge-beta
 	{
-		font-size: 2em;
+		font-size: 1.5em;
+		height: 5em;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1;
 	}
 }
 
@@ -37,7 +38,16 @@
 	box-shadow: 0 -0.125em 0 gray(0, 0.2) inset;
 	color: gray(255);
 	font-weight: bold;
-	padding: 2em 3em 0.5em;
+	padding: 0.5em;
 	text-transform: uppercase;
-	transform: rotate(45deg) translate(1.5em, -3em);
+
+}
+
+@media (--media-medium-min)
+{
+	.rs-box-badge-beta
+	{
+		transform: rotate(45deg) translate(1.5em, -3em);
+		padding: 2em 3em 0.5em;
+	}
 }

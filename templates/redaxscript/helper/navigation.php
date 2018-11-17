@@ -18,8 +18,13 @@ $optionArray =
 $firstParameter = Template\Helper::getRegistry('firstParameter');
 $author = $optionArray[$firstParameter]['author'];
 $order = $optionArray[$firstParameter]['order'];
-$categories = Db::forTablePrefix('categories')->where('author', $author)->orderByAsc($order)->findMany();
-$articles = Db::forTablePrefix('articles')->where('author', $author)->orderByAsc($order)->findMany();
+$whereArray =
+[
+	'author' => $author,
+	'status' => 1
+];
+$categories = Db::forTablePrefix('categories')->where($whereArray)->orderByAsc($order)->findMany();
+$articles = Db::forTablePrefix('articles')->where($whereArray)->orderByAsc($order)->findMany();
 
 /* process categories */
 

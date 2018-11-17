@@ -5,7 +5,5 @@
 
 	<!-- navigation -->
 
-	<?php if(Helper::getRegistry('firstParameter') === 'api' || Helper::getRegistry('firstParameter') === 'documentation'): ?>
-		<?php echo Tag::partial('redaxscript/navigation.phtml'); ?>
-	<?php endif; ?>
+	<?php echo Tag::partial('redaxscript/navigation.phtml'); ?>
 </aside>

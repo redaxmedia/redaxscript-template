@@ -30,7 +30,7 @@
 	background: var(--rs-color-tertiary);
 	box-sizing: border-box;
 	color: gray(200);
-	padding: 5em 2em 10em;
+	padding: 6em 2em 8.5em;
 	text-align: center;
 }
 
@@ -92,7 +92,7 @@
 .rs-link-branding:before
 {
 	background: var(--rs-url-branding) no-repeat center / 55%, linear-gradient(to top, gray(230), gray(255));
-	border-radius: 0.05em;
+	border-radius: 0.125em;
 	bottom: 0;
 	content: '';
 	left: 0;
@@ -105,7 +105,7 @@
 {
 	font-size: 1.5em;
 	margin-bottom: 2em;
-	margin-top: 2em;
+	margin-top: 3em;
 }
 
 /** @section 1.5 button */
@@ -161,7 +161,6 @@
 
 .rs-has-shield
 {
-	margin-bottom: 1em;
 	margin-top: 2em;
 
 	& a

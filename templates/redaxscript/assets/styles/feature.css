@@ -14,9 +14,15 @@
 
 .rs-wrapper-label-feature
 {
-	margin-bottom: 2em;
-	margin-top: 1em;
 	text-align: center;
+}
+
+@media (--media-small-min)
+{
+	.rs-wrapper-label-feature
+	{
+		margin-bottom: 2em;
+	}
 }
 
 .rs-label-feature-developer,

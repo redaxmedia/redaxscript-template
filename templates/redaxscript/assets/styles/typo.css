@@ -1,10 +1,10 @@
 /**
  * @tableofcontents
  *
- * 1. documentation
+ * 1. link
  */
 
-/** @section 1. documentation */
+/** @section 1. link */
 
 .rs-link-documentation
 {
@@ -15,7 +15,16 @@
 	text-transform: uppercase;
 }
 
-.rs-body-homepage .rs-link-documentation
+.rs-body-homepage
 {
-	display: none;
+	& .rs-link-documentation
+	{
+		display: none;
+	}
+
+	& .rs-title-content-sub:first-of-type
+	{
+		margin-top: 0;
+	}
+
 }

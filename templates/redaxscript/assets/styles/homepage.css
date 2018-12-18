@@ -123,9 +123,10 @@
 		content: attr(data-description);
 		display: block;
 		font-size: 0.5em;
-		line-height: 4em;
+		line-height: 1.25em;
 		margin-top: -2em;
 		opacity: 0.3;
+		padding: 1.5em 0;
 		text-transform: uppercase;
 	}
 }

@@ -115,8 +115,19 @@
 .rs-button-demo
 {
 	@extend %rs-button;
-	font-size: 1.5em;
-	min-width: 8em;
+	font-size: 1.625em;
+
+	&:after
+	{
+		color: gray(0);
+		content: attr(data-description);
+		display: block;
+		font-size: 0.5em;
+		line-height: 4em;
+		margin-top: -2em;
+		opacity: 0.3;
+		text-transform: uppercase;
+	}
 }
 
 .rs-button-download
@@ -155,6 +166,7 @@
 	.rs-button-demo
 	{
 		margin: 1em;
+		min-width: 10em;
 	}
 }
 
@@ -162,7 +174,7 @@
 
 .rs-has-shield
 {
-	margin-top: 2em;
+	margin-top: 3em;
 
 	& a
 	{

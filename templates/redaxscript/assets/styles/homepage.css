@@ -115,7 +115,7 @@
 .rs-button-demo
 {
 	@extend %rs-button;
-	font-size: 1.625em;
+	font-size: 1.5em;
 
 	&:after
 	{

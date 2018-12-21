@@ -65,7 +65,7 @@
 .rs-fn-status-developer:not(:checked) ~ .rs-has-avatar .rs-label-avatar-developer,
 .rs-fn-status-designer:not(:checked) ~ .rs-has-avatar .rs-label-avatar-designer
 {
-	color: gray(200);
+	color: gray(80);
 	cursor: pointer;
 
 	&:hover

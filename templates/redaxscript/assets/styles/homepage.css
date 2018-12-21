@@ -40,7 +40,7 @@
 .rs-box-homepage
 {
 	background: var(--rs-color-tertiary);
-	color: gray(200);
+	color: gray(80);
 	padding: 6em 2em 8.5em;
 	text-align: center;
 }
@@ -49,7 +49,7 @@
 
 .rs-section-homepage
 {
-	background: gray(255);
+	background: gray(100);
 	font-size: 1.25em;
 	margin-bottom: 2em;
 	margin-left: auto;
@@ -92,7 +92,7 @@
 
 .rs-link-branding:before
 {
-	background: var(--rs-url-branding) no-repeat center / 55%, linear-gradient(to top, gray(230), gray(255));
+	background: var(--rs-url-branding) no-repeat center / 55%, linear-gradient(to top, gray(90), gray(100));
 	border-radius: 0.125em;
 	bottom: 0;
 	content: '';
@@ -134,7 +134,7 @@
 .rs-button-download
 {
 	background: var(--rs-color-secondary);
-	color: gray(255);
+	color: gray(100);
 
 	&:hover
 	{
@@ -144,12 +144,12 @@
 
 .rs-button-demo
 {
-	background: gray(230);
+	background: gray(90);
 	color: var(--rs-color-tertiary);
 
 	&:hover
 	{
-		background: gray(255);
+		background: gray(100);
 	}
 }
 

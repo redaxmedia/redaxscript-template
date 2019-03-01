@@ -111,8 +111,8 @@
 
 /** @section 1.5 button */
 
-.rs-button-download,
-.rs-button-demo
+.rs-button-home-primary,
+.rs-button-home-secondary
 {
 	@extend %rs-button;
 	font-size: 1.5em;
@@ -131,7 +131,7 @@
 	}
 }
 
-.rs-button-download
+.rs-button-home-primary
 {
 	background: var(--rs-color-secondary);
 	color: gray(100);
@@ -142,7 +142,7 @@
 	}
 }
 
-.rs-button-demo
+.rs-button-home-secondary
 {
 	background: gray(90);
 	color: var(--rs-color-tertiary);
@@ -155,7 +155,10 @@
 
 @media (--media-medium-max)
 {
-	.rs-button-download + .rs-button-demo
+	.rs-button-home-primary + .rs-button-home-primary,
+	.rs-button-home-primary + .rs-button-home-secondary,
+	.rs-button-home-secondary + .rs-button-home-primary,
+	.rs-button-home-secondary + .rs-button-home-secondary
 	{
 		margin-top: 1em;
 	}
@@ -163,10 +166,10 @@
 
 @media (--media-medium-min)
 {
-	.rs-button-download,
-	.rs-button-demo
+	.rs-button-home-primary,
+	.rs-button-home-secondary
 	{
-		margin: 1em;
+		margin: 0.5em;
 		min-width: 10em;
 	}
 }

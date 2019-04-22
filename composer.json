@@ -3,7 +3,7 @@
 	"description": "Template for Redaxscript's website",
 	"version": "4.0.0",
 	"homepage": "https://redaxscript.com",
-	"license": "GPL-3.0",
+	"license": "MIT",
 	"require":
 	{
 		"php": "^7.1"

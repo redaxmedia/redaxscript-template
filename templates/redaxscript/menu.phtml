@@ -11,20 +11,14 @@
 
 <ul class="rs-fn-dropdown rs-fn-menu rs-list-menu">
 	<li>
-		<span><?php echo Helper::getLanguage('categories'); ?></span>
-		<?php if ($menuArray['categories']): ?>
+		<span>Menu</span>
+		<?php if ($menuArray['categories'] || $menuArray['articles']): ?>
 			<ul class="rs-list-menu-children">
 				<?php foreach ($menuArray['categories'] as $categoryArray): ?>
 					<li>
 						<a href="<?php echo Helper::getRegistry('parameterRoute') . $categoryArray['alias']; ?>"><?php echo $categoryArray['title']; ?></a>
 					</li>
 				<?php endforeach; ?>
-			</ul>
-		<?php endif; ?>
-	</li><li>
-		<span><?php echo Helper::getLanguage('articles'); ?></span>
-		<?php if ($menuArray['articles']): ?>
-			<ul class="rs-list-menu-children">
 				<?php foreach ($menuArray['articles'] as $articleArray): ?>
 					<li>
 						<a href="<?php echo Helper::getRegistry('parameterRoute') . $articleArray['alias']; ?>"><?php echo $articleArray['title']; ?></a>

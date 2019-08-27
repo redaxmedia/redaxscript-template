@@ -14,7 +14,7 @@
 	->init()
 	->append('charset', Helper::getSetting('charset'))
 	->append(['name' => 'author', 'content' => Helper::getSetting('author')])
-	->append(['name' => 'generator', 'content' => Helper::getLanguage('name', '_package') . ' ' . Helper::getLanguage('version', '_package')])
+	->append(['name' => 'generator', 'content' => Helper::getLanguage('_package')['name'] . ' ' . Helper::getLanguage('_package')['version']])
 	->append(['name' => 'description', 'content' => Helper::getRegistry('fullRoute') ? Helper::getDescription() : Helper::getSetting('description')])
 	->append(['name' => 'keywords', 'content' => Helper::getRegistry('fullRoute') ? Helper::getKeywords() : Helper::getSetting('keywords')])
 	->append(['name' => 'robots', 'content' => Helper::getRegistry('fullRoute') ? Helper::getRobots() : 'all'])

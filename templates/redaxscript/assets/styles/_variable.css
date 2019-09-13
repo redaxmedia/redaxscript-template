@@ -2,19 +2,14 @@
  * @tableofcontents
  *
  * 1. variable
- *    1.1 color
- *    1.2 font
+ *    1.1 font
  */
 
 /** @section 1. variable */
 
 :root
 {
-	/** @section 1.1 color */
-
-	--rs-color-beta: #d10020;
-
-	/** @section 1.2 font */
+	/** @section 1.1 font */
 
 	--rs-font-flaticon: 'flaticon';
 }

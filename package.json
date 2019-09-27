@@ -38,7 +38,7 @@
 		"postcss-rtl": "1.5.0",
 		"redaxscript-flaticon": "https://github.com/redaxscript/redaxscript-flaticon.git",
 		"stylefmt": "6.0.3",
-		"stylelint": "10.1.0",
+		"stylelint": "11.0.0",
 		"stylelint-config-redaxmedia": "1.0.0"
 	}
 }

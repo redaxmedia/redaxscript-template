@@ -1,7 +1,4 @@
 <?php
 namespace Redaxscript;
 
-return Db::forTablePrefix('articles')
-	->where('alias', 'features')
-	->findOne()
-	->text;
+return Db::forTablePrefix('articles')->where('alias', 'features')->findOne()->text;

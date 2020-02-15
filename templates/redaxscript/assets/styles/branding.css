@@ -1,0 +1,153 @@
+/**
+ * @tableofcontents
+ *
+ * 1. branding
+ *    1.1 box
+ *    1.2 title
+ *    1.3 link
+ *    1.4 text
+ *    1.5 button
+ *    1.6 shield
+ */
+
+/** @section 1. branding */
+
+/** @section 1.1 box */
+
+.rs-box-branding
+{
+	background: var(--rs-color-tertiary);
+	color: gray(80);
+	padding: 6em 2em 8.5em;
+	text-align: center;
+
+	& + .rs-fn-overlap
+	{
+		margin-top: -5em;
+	}
+}
+
+/** @section 1.2 title */
+
+.rs-title-branding
+{
+	height: 4em;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-indent: -999em;
+	width: 4em;
+}
+
+@media (--media-medium-min)
+{
+	.rs-title-branding
+	{
+		font-size: 2.5em;
+	}
+}
+
+/** @section 1.3 link */
+
+.rs-link-branding:before
+{
+	background: var(--rs-url-branding) no-repeat center / 55%, linear-gradient(to top, gray(90), gray(100));
+	border-radius: 0.125em;
+	bottom: 0;
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/** @section 1.4 text */
+
+.rs-text-branding
+{
+	font-size: 1.5em;
+	margin-bottom: 2em;
+	margin-top: 3em;
+}
+
+/** @section 1.5 button */
+
+.rs-button-branding-primary,
+.rs-button-branding-secondary
+{
+	@extend %rs-button;
+	font-size: 1.5em;
+
+	&:after
+	{
+		color: gray(0);
+		content: attr(data-description);
+		display: block;
+		font-size: 0.75em;
+		line-height: 2.75em;
+		margin-top: -1.25em;
+		opacity: 0.4;
+	}
+}
+
+.rs-button-branding-primary
+{
+	background: var(--rs-color-secondary);
+	color: gray(100);
+
+	&:hover
+	{
+		background: var(--rs-color-secondary-light);
+	}
+}
+
+.rs-button-branding-secondary
+{
+	background: gray(90);
+	color: var(--rs-color-tertiary);
+
+	&:hover
+	{
+		background: gray(100);
+	}
+}
+
+@media (--media-medium-max)
+{
+	.rs-button-branding-primary + .rs-button-branding-primary,
+	.rs-button-branding-primary + .rs-button-branding-secondary,
+	.rs-button-branding-secondary + .rs-button-branding-primary,
+	.rs-button-branding-secondary + .rs-button-branding-secondary
+	{
+		margin-top: 1em;
+	}
+}
+
+@media (--media-medium-min)
+{
+	.rs-button-branding-primary,
+	.rs-button-branding-secondary
+	{
+		margin: 0.5em;
+		min-width: 10em;
+	}
+}
+
+/** @section 1.6 shield */
+
+.rs-has-shield
+{
+	margin-top: 2em;
+
+	& a
+	{
+		display: inline-block;
+		margin: 0.25em;
+	}
+
+	& img
+	{
+		height: 1.5em;
+		vertical-align: top;
+	}
+}

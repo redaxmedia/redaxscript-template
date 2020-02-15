@@ -1,21 +1,25 @@
 <?php namespace Redaxscript\Template; ?>
 
-<!-- homepage -->
+<!-- branding -->
 
-<?php echo include('redaxscript/helper/homepage.php'); ?>
+<div class="rs-box-branding">
+	<div class="rs-wrapper-homepage">
+		<?php echo include('redaxscript/helper/branding.php'); ?>
+	</div>
+</div>
 
 <!-- quick start -->
 
-<div class="rs-section-homepage rs-wrapper-homepage">
+<div class="rs-fn-overlap rs-box-homepage rs-wrapper-homepage">
 	<?php echo include('redaxscript/helper/quick-start.php'); ?>
-    <div class="rs-wrapper-button-homepage">
-        <a href="<?php echo Helper::getRegistry('parameterRoute'); ?>documentation/basics" class="rs-link-more">Read the documentation</a>
-    </div>
+	<div class="rs-wrapper-button-homepage">
+		<a href="<?php echo Helper::getRegistry('parameterRoute'); ?>documentation/basics" class="rs-link-more">Read the documentation</a>
+	</div>
 </div>
 
 <!-- feature -->
 
-<div class="rs-section-homepage rs-wrapper-homepage">
+<div class="rs-box-homepage rs-wrapper-homepage">
 	<?php echo include('redaxscript/helper/features.php'); ?>
 	<div class="rs-wrapper-button-homepage">
 		<a href="<?php echo Helper::getRegistry('parameterRoute'); ?>features" class="rs-link-more">Discover all features</a>

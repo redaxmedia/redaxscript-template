@@ -47,6 +47,7 @@
 		display: block;
 		font-size: 4em;
 		height: 1em;
+		margin-bottom: 0.125em;
 		overflow: hidden;
 	}
 }
@@ -277,6 +278,7 @@
 .rs-title-feature-sub
 {
 	color: var(--rs-color-primary);
+	font-weight: 500;
 }
 
 @media (--media-small-max)

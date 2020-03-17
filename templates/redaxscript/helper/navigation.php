@@ -7,7 +7,7 @@ $optionArray =
 	'api' =>
 	[
 		'author' => 'api-sync',
-		'order' => 'title'
+		'order' => 'rank'
 	],
 	'documentation' =>
 	[

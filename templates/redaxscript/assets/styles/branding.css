@@ -16,7 +16,7 @@
 
 .rs-box-branding
 {
-	background: var(--rs-color-tertiary);
+	background: var(--rs-color-primary);
 	color: gray(80);
 	padding: 6em 2em 8.5em;
 	text-align: center;
@@ -92,19 +92,19 @@
 
 .rs-button-branding-primary
 {
-	background: var(--rs-color-secondary);
+	background: var(--rs-color-tertiary);
 	color: gray(100);
 
 	&:hover
 	{
-		background: var(--rs-color-secondary-light);
+		background: var(--rs-color-tertiary-light);
 	}
 }
 
 .rs-button-branding-secondary
 {
 	background: gray(90);
-	color: var(--rs-color-tertiary);
+	color: var(--rs-color-primary);
 
 	&:hover
 	{

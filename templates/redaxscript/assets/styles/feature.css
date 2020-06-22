@@ -35,7 +35,7 @@
 .rs-label-avatar-designer
 {
 	border-radius: 0.125em;
-	color: var(--rs-color-tertiary);
+	color: var(--rs-color-primary);
 	display: inline-block;
 	font-size: 1.25em;
 	margin: 0.5em;
@@ -71,7 +71,7 @@
 
 	&:hover
 	{
-		color: var(--rs-color-primary);
+		color: var(--rs-color-secondary);
 	}
 }
 
@@ -117,7 +117,7 @@
 
 		&:before
 		{
-			color: var(--rs-color-primary);
+			color: var(--rs-color-secondary);
 			font-size: 3em;
 		}
 	}
@@ -277,7 +277,7 @@
 
 .rs-title-feature-sub
 {
-	color: var(--rs-color-primary);
+	color: var(--rs-color-secondary);
 	font-weight: 500;
 }
 

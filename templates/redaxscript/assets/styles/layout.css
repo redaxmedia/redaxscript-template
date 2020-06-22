@@ -9,6 +9,6 @@
 .rs-body-homepage
 {
 	background: gray(90);
-	color: var(--rs-color-tertiary);
+	color: var(--rs-color-primary);
 	font: 1em var(--rs-font-primary);
 }

@@ -10,10 +10,7 @@ module.exports = grunt =>
 		jsonlint: require('./tasks/jsonlint')(grunt),
 		ncsslint: require('./tasks/ncsslint')(grunt),
 		postcss: require('./tasks/postcss')(grunt),
-		rename: require('./tasks/rename')(grunt),
-		svgmin: require('./tasks/svgmin')(grunt),
-		tocgen: require('./tasks/tocgen')(grunt),
-		webfont: require('./tasks/webfont')(grunt)
+		tocgen: require('./tasks/tocgen')(grunt)
 	});
 
 	/* load tasks */
@@ -44,18 +41,11 @@ module.exports = grunt =>
 	]);
 	grunt.registerTask('optimize',
 	[
-		'tocgen',
-		'svgmin'
+		'tocgen'
 	]);
 	grunt.registerTask('build',
 	[
-		'build-fonts',
 		'build-styles'
-	]);
-	grunt.registerTask('build-fonts',
-	[
-		'webfont',
-		'rename'
 	]);
 	grunt.registerTask('build-styles',
 	[

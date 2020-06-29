@@ -21,9 +21,4 @@
 	{
 		display: none;
 	}
-
-	& .rs-title-content-sub:first-of-type
-	{
-		margin-top: 0;
-	}
 }

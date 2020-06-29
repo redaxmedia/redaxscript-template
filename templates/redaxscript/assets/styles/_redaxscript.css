@@ -1,6 +1,4 @@
 @import '../../../../vendor/redaxscript/redaxscript/templates/default/assets/styles/_default.css';
-@import '_variable.css';
-@import '_flaticon.css';
 @import 'feature.css';
 @import 'layout.css';
 @import 'branding.css';

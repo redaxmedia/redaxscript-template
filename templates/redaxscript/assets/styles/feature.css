@@ -136,7 +136,7 @@
 		content: '';
 		display: inline-block;
 		height: 2em;
-		transform: scale(1.5);
+		transform: scale(1.375) translateX(0.25em);
 		vertical-align: middle;
 		width: 2em;
 	}
@@ -144,7 +144,7 @@
 	& p
 	{
 		line-height: 1.5em;
-		margin-top: 0.5em;
+		margin-top: 1em;
 	}
 }
 
@@ -389,7 +389,7 @@
 {
 	.rs-list-feature h3:before
 	{
-		margin-right: 1em;
+		margin-right: 1.25em;
 	}
 }
 

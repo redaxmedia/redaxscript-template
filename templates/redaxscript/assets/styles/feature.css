@@ -85,18 +85,18 @@
 .rs-fn-status-developer:not(:checked) ~ .rs-has-avatar .rs-label-avatar-developer,
 .rs-fn-status-designer:not(:checked) ~ .rs-has-avatar .rs-label-avatar-designer
 {
-	color: gray(80);
+	color: gray(90);
 	cursor: pointer;
 }
 
 .rs-fn-status-developer:not(:checked) ~ .rs-has-avatar .rs-label-avatar-developer:before
 {
-	background-image: svg-load('redaxscript-flaticon/flaticon/profiles-avatar/nerd-male-profile-avatar.svg', fill = gray(80));
+	background-image: svg-load('redaxscript-flaticon/flaticon/profiles-avatar/nerd-male-profile-avatar.svg', fill = gray(90));
 }
 
 .rs-fn-status-designer:not(:checked) ~ .rs-has-avatar .rs-label-avatar-designer:before
 {
-	background-image: svg-load('redaxscript-flaticon/flaticon/profiles-avatar/avatar-of-a-person-with-dark-short-hair.svg', fill = gray(80));
+	background-image: svg-load('redaxscript-flaticon/flaticon/profiles-avatar/avatar-of-a-person-with-dark-short-hair.svg', fill = gray(90));
 }
 
 /** @section 2. feature */
@@ -132,7 +132,7 @@
 		background-color: gray(95);
 		background-position: center;
 		background-repeat: no-repeat;
-		border-radius: 50%;
+		border-radius: 0.125em;
 		content: '';
 		display: inline-block;
 		height: 2em;

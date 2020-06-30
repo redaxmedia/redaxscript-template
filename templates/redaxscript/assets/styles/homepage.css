@@ -4,6 +4,8 @@
  * 1. homepage
  *    1.1 wrapper
  *    1.2 box
+ * 2. query
+ *    4.1 large-min
  */
 
 /** @section 1. homepage */
@@ -14,15 +16,6 @@
 {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-@media (--media-large-min)
-{
-	.rs-wrapper-homepage
-	{
-		max-width: 100rem;
-		width: 80%;
-	}
 }
 
 .rs-wrapper-button-homepage
@@ -44,10 +37,20 @@
 	padding: 2em;
 }
 
+/** @section 2. query */
+
+/** @section 4.1 large-min */
+
 @media (--media-large-min)
 {
 	.rs-box-homepage
 	{
 		border-radius: 0.125em;
+	}
+
+	.rs-wrapper-homepage
+	{
+		max-width: 100rem;
+		width: 80%;
 	}
 }

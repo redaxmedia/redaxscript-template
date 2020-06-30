@@ -136,7 +136,7 @@
 		content: '';
 		display: inline-block;
 		height: 2em;
-		transform: scale(1.375) translateX(0.25em);
+		transform: scale(1.375);
 		vertical-align: middle;
 		width: 2em;
 	}
@@ -389,7 +389,8 @@
 {
 	.rs-list-feature h3:before
 	{
-		margin-right: 1.25em;
+		margin-left: 0.375em;
+		margin-right: 1em;
 	}
 }
 

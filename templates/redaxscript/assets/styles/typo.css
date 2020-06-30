@@ -15,10 +15,3 @@
 	text-transform: uppercase;
 }
 
-.rs-body-homepage
-{
-	& .rs-link-documentation
-	{
-		display: none;
-	}
-}

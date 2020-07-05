@@ -16,8 +16,7 @@ module.exports = () =>
 		{
 			src:
 			[
-				'templates/*/assets/styles/*.css',
-				'!templates/*/assets/styles/_template.css'
+				'templates/*/assets/styles/*.css'
 			],
 			options:
 			{
@@ -35,8 +34,7 @@ module.exports = () =>
 		{
 			src:
 			[
-				'templates/*/assets/styles/*.css',
-				'!templates/*/assets/styles/_template.css'
+				'templates/*/assets/styles/*.css'
 			],
 			options:
 			{
@@ -87,6 +85,13 @@ module.exports = () =>
 				}),
 				require('postcss-color-function'),
 				require('postcss-rtl'),
+				require('postcss-inline-svg')(
+				{
+					paths:
+					[
+						'node_modules'
+					]
+				}),
 				require('autoprefixer'),
 				require('cssnano')
 			]

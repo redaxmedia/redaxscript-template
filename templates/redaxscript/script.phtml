@@ -1,0 +1,9 @@
+<?php namespace Redaxscript\Template; ?>
+
+<!-- foot script -->
+
+<?php echo Tag::script()
+	->init('foot')
+	->appendFile('templates/default/dist/scripts/default.min.js')
+	->appendFile('templates/redaxscript/dist/scripts/redaxscript.min.js')
+	->concat(); ?>

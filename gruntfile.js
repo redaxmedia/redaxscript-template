@@ -10,6 +10,7 @@ module.exports = grunt =>
 		jsonlint: require('./tasks/jsonlint')(grunt),
 		ncsslint: require('./tasks/ncsslint')(grunt),
 		postcss: require('./tasks/postcss')(grunt),
+		babel: require('./tasks/babel')(grunt),
 		tocgen: require('./tasks/tocgen')(grunt)
 	});
 
@@ -45,10 +46,15 @@ module.exports = grunt =>
 	]);
 	grunt.registerTask('build',
 	[
-		'build-styles'
+		'build-styles',
+		'build-scripts'
 	]);
 	grunt.registerTask('build-styles',
 	[
 		'postcss:templateRedaxscript'
+	]);
+	grunt.registerTask('build-scripts',
+	[
+		'babel:templateRedaxscript'
 	]);
 };

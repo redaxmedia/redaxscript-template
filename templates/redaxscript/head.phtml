@@ -48,6 +48,10 @@
 
 <?php echo Tag::script()
 	->init('head')
-	->prependInline(Helper::getContent('assets/scripts/init.js'))
+	->prependInline(Helper::getContent(
+	[
+		'assets/scripts/init.js',
+		'templates/redaxscript/assets/scripts/init.js'
+	]))
 	->transportVar('rs', Helper::getTransport())
 	->concat(); ?>

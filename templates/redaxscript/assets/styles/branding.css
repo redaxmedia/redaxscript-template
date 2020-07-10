@@ -20,7 +20,7 @@
 .rs-box-branding
 {
 	background: var(--rs-color-primary);
-	color: gray(80);
+	color: gray(100/ 0.6);
 	padding: 6em 2em 8.5em;
 	text-align: center;
 

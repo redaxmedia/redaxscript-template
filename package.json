@@ -11,11 +11,15 @@
 	},
 	"devDependencies":
 	{
+		"@babel/core": "7.10.4",
+		"@babel/preset-env": "7.10.4",
 		"@mdi/svg": "5.3.45",
 		"autoprefixer": "9.8.2",
+		"babel-preset-minify": "0.5.1",
 		"cssnano": "4.1.10",
 		"colorguard": "1.2.1",
 		"grunt": "1.1.0",
+		"grunt-babel": "8.0.0",
 		"grunt-contrib-rename": "0.2.0",
 		"grunt-htmlhint": "0.9.13",
 		"grunt-jsonlint": "2.1.2",

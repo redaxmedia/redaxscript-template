@@ -1,0 +1,86 @@
+/**
+ * @tableofcontents
+ *
+ * 1. animation
+ * 2. keyframe
+ *    2.1. colorize
+ */
+
+/** @section 1. animation */
+
+.rs-has-animation
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.rs-wrapper-homepage,
+.rs-box-feature
+{
+	position: relative;
+	z-index: 10;
+}
+
+.rs-wrapper-animation
+{
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.rs-box-animation
+{
+	background: gray(0 / 0.1);
+	height: 200vh;
+	opacity: 0;
+	position: absolute;
+	transition: opacity 4s;
+	width: 200vw;
+	will-change: transform;
+
+	&.rs-is-first
+	{
+		animation: 160s rotate-left infinite linear, 40s colorize infinite linear;
+		left: 0;
+	}
+
+	&.rs-is-second
+	{
+		animation: 80s rotate-right infinite linear;
+		right: 0;
+	}
+
+	&.rs-is-third
+	{
+		animation: 120s rotate-left infinite linear;
+	}
+}
+
+/** @section 2. keyframe */
+
+/** @section 2.1. colorize */
+
+@keyframes colorize
+{
+	35%
+	{
+		background: gray(0 / 0.1);
+	}
+
+	40%
+	{
+		background: var(--rs-color-quaternary);
+	}
+
+	45%
+	{
+		background: gray(0 / 0.1);
+	}
+
+	100%
+	{
+		background: gray(0 / 0.1);
+	}
+}

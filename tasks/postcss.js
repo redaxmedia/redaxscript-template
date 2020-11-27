@@ -82,7 +82,7 @@ module.exports = () =>
 					preserve: false
 				}),
 				require('postcss-color-function'),
-				//require('postcss-rtl'),
+				require('postcss-rtl'),
 				require('postcss-inline-svg')(
 				{
 					paths:
